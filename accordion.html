@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+	</script>
+	<link href="style.css" rel="stylesheet">
+	<link href="reset.css" rel="stylesheet">
+</head>
+<body>
+	<script type="text/javascript">
+		$(function(){
+			$(".accordionbox dt").on("click", function() {
+				$(this).next().slideToggle();	
+				// activeが存在する場合
+				if ($(this).children(".accordion_icon").hasClass('active')) {
+					// activeを削除
+					$(this).children(".accordion_icon").removeClass('active');
+				}
+				else {
+					// activeを追加
+					$(this).children(".accordion_icon").addClass('active');
+				}
+			});
+		});
+		$(function(){
+			$(".accordionbox2 dt").on("click", function() {
+				$(this).next().slideToggle();	
+				// activeが存在する場合
+				if ($(this).children(".accordion_icon").hasClass('active')) {
+					// activeを削除
+					$(this).children(".accordion_icon").removeClass('active');
+				}
+				else {
+					// activeを追加
+					$(this).children(".accordion_icon").addClass('active');
+				}
+			});
+		});
+		$(function(){
+			$(".accordionbox3 dt").on("click", function() {
+				$(this).next().slideToggle();	
+				// activeが存在する場合
+				if ($(this).children(".accordion_icon").hasClass('active')) {
+					// activeを削除
+					$(this).children(".accordion_icon").removeClass('active');
+				}
+				else {
+					// activeを追加
+					$(this).children(".accordion_icon").addClass('active');
+				}
+			});
+		});
+	</script>
+	<div id="accordion" class="accordionbox">
+    	<dl class="accordionlist">
+        	<dt class="clearfix">
+            	<div class="title">
+                	<p>宮沢賢治</p>
+            	</div>
+            	<p class="accordion_icon">
+            		<span></span>
+            		<span></span>
+            	</p>
+        	</dt>
+        	<dd>
+        		<img src="1.jpg">
+        		<p>
+        		わたくしという現象は<br>
+        		一つの明滅する<br>
+        		蛍光灯なのであります。
+        		</p>
+     		</dd>
+    	</dl>
+	</div>
+	<div id="accordion" class="accordionbox2">
+    	<dl class="accordionlist">
+        	<dt class="clearfix">
+            	<div class="title">
+                	<p>夏目漱石</p>
+            	</div>
+            	<p class="accordion_icon">
+            		<span></span>
+            		<span></span>
+            	</p>
+        	</dt>
+        	<dd><img src="2.jpg">
+        		<p>
+        		吾輩は<br>
+        		猫である<br>
+        		名前はまだない。
+        		</p>
+     		</dd>
+    	</dl>
+	</div>
+	<div id="accordion" class="accordionbox3">
+    	<dl class="accordionlist">
+        	<dt class="clearfix">
+            	<div class="title">
+                	<p>中原中也</p>
+            	</div>
+            	<p class="accordion_icon">
+            		<span></span>
+            		<span></span>
+            	</p>
+        	</dt>
+        	<dd>
+        		<img src="3.jpg">
+        		<p>
+        		汚れちまった<br>
+        		悲しみは<br>
+        		例えば狐の皮衣
+        		</p>
+     		</dd>
+    	</dl>
+	</div>
+</body>
+</html>
