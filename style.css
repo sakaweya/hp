@@ -63,7 +63,7 @@
     top: 5px;
 	transform: rotate(90deg);
 }
-/*�{�A�|�؂�ւ�*/
+/*{A|Ø‚è‘Ö‚¦*/
 .accordion_icon.active span:nth-of-type(1) {
 	display:none;
 }
@@ -79,3 +79,6 @@
 	display : block ;
 	clear   : both  ;
 }
+.break-all{
+	word-break : break-all;
+} 
